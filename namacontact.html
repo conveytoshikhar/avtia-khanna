@@ -9,17 +9,15 @@
       display: grid;
       grid-template-columns: 50% 50%;
       grid-gap: 10px;
-      justify-content: center;
-
-    }
-
+      justify-content: center; }
 
     .contact {
       color: #436d67;
       font-size: 65px;
-      text-align: center;
       font-weight: normal;
+      padding-left: 430px;
       margin-bottom: -100px;
+      text-align: center;
     }
 
     .contact1 h3 {
@@ -30,6 +28,9 @@
       text-align: center;
       font-family: "optima";
       font-size: 30px;
+      justify-content: center;
+        align-content: center;
+        text-align: center;
     }
 
     .contact2 h5 {
@@ -39,6 +40,8 @@
       font-size: 18px;
       margin-top: 40px;
       margin-bottom: 150px;
+      justify-content: center;
+        align-content: center;
     }
 
 
@@ -48,7 +51,7 @@
       background-size: cover;
       background-position: center;
       justify-content: center;
-      width: 1475px;
+      width: 100vh;
       height: 600px;
       padding-top: 0px;
       margin-top: -80px;
@@ -56,7 +59,8 @@
 
     .overlay {
       height: 600px;
-      width: 600px;
+      width: 700px;
+      margin-left: 40px;
       margin-top: -80px;
       background-color: black;
       opacity: 0.42;
@@ -67,10 +71,101 @@
       color: white;
       font-family: "Optima";
       font-size: 30px;
-      color: white;
       margin: 35px;
       margin-top: 100px;
+      justify-content: center;
+        align-content: center;
+        text-align: center;
     }
+
+
+    
+    .contactform
+{
+  padding: 75px 50px;
+  background:white;
+  box-shadow: 0 15px 70px rgba(0,0,0,0.1);
+  max-width: 715px;
+  margin-top: 0px;
+  font-family: "Optima";
+}
+.contactform h3
+{
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contactform .inputbox
+{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+  width: 100%;
+  border: 1.3px solid darkgrey;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+  font-weight: 300;
+}
+.contactform .inputbox input[type="submit"]
+{
+  font-size: 1em;
+  color: #fff;
+  background: #436d67;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none; 
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;}
+
+
+  .contactform .inputboxsend input[type="submit"]
+{padding:10px 30px;
+  font-size: 1em;
+  color: #fff;
+  background: #436d67;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none; 
+  letter-spacing: 2px;
+  transition: 0.75s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;}
+
+
+.contactform .inputboxsend input:hover{background-color:darkgrey;
+color: whitesmoke;
+  letter-spacing: 4px;}
+  
+  
+
+
+  @media only screen and (max-width: 480px) and (min-width: 80px) {
+
+  }
+
+
+  @media only screen and (max-width: 1024px) and (min-width: 480px) {
+   
+    .contact {
+      padding-left: 130px;}
+      background-color: red;
+
+  } 
+
   </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -150,6 +245,28 @@
       </div>
     </div>
   </div>
+
+
+  <div class="contactform">
+    <form method="post" action="mailto:namastudiopottery.com">
+    <h3>Send Message</h3>
+    <div class="inputbox">
+      <input type="text" name="" placeholder="Name">
+    </div>
+    <div class="inputbox">
+      <input type="text" name="" placeholder="Email">
+    </div>
+    <div class="inputbox">
+      <textarea placeholder="Message"></textarea>
+    </div>
+    <div class="inputboxsend">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+  </div>
+
+
+  
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

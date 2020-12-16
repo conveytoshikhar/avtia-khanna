@@ -5,85 +5,105 @@
   <meta charset="utf-8">
   <title>Our Clay Story </title>
   <style>
+    
     .wrapper {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-gap: 10px;
       justify-content: center;
 
-    }
-
-    .boxa {
-      background-image: url("https://i.ibb.co/1QB12yR/PHOTO-2020-08-30-17-07-33.jpg");
+    }     
+.boxa { background-image: url("https://i.ibb.co/1QB12yR/PHOTO-2020-08-30-17-07-33.jpg");
       background-position: center center;
-      background-size: cover;
-      height: 740px;
-      padding: 50px;
-      margin: 50px;
-
+    background-size: cover;
+    height: 820px;
+ padding: 50px;
+ margin: 50px;
+ width: 75%;
+   
     }
-
-    .boxb {
-
-      color: darkgrey;
-      font-size: 21px;
-      font-family: "optima";
-      height: 620px;
-      justify-content: center;
-      align-content: center;
-      padding: 63px;
-      margin-top: 65px;
-    }
+    
+.boxb {
+  
+  color: darkgrey;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.25em;
+    height: 720px;
+    justify-content: center;
+    align-content: center;
+    text-justify: auto;
+    padding: 80px;
+    font-family: "Optima";
+    width: 75%;
+}
+    p{ padding: 20px}
+h1{color: #436d67;}
 
     .line {
       font-family: cursive;
       background: #c9bfa3;
       color: white;
       font-size: 30px;
-      padding: 20px;
       justify-content: center;
       align-content: center;
       text-align: center;
       height: 280px;
-      margin-top: 110px;
+      width:100%;
     }
 
-    .line,
-    p {
-      padding: 5px;
-    }
+    .line,p {padding: 10px;}
 
     .filler {
       height: 50px;
       background: #436d67;
       margin-bottom: 40px;
-    }
+      width:100%; }
 
     .wrapper1 {
       margin: 0 0 20px 0;
       width: 500px;
       height: 400px;
-
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(4, 80px);
       grid-template-rows: repeat(3, 100px);
-      justify-content: center space-around;
-      align-content: end;
-    }
+      justify-content: center ;
+      align-content: end; }
+
+    footer{ 
+        background-color:#436d67 ;
+        color: white;
+        padding: 8px;
+        margin:50px 0px 0px 0px;
+        width: 100%;
+        text-align: center;
+        font-family: "Optima";} 
+
+/* media queries */
 
 
-    .boxitem1 {
-      background-image: url("https://deneenpottery.com/wp-content/uploads/2018/09/Tips-for-finding-pottery-inspiration-e1536174616517.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      justify-content: center;
-      width: 1440px;
-      height: 500px;
-      padding-top: 0px;
-      margin-top: -80px;
-    }
+@media screen and (max-width: 480px) /* iphone*/ {
+  .wrapper {display: block;
+    width: 950px;
+    align-content: center;}
+    
+    
+  
+    
+    @media screen and  (max-width: 1024px) and (min-width: 480px) /* ipad*/{ 
+
+    .wrapper { display: block;
+    width: 950px; }
+
+.boxa{width: 50%;}
+
+.boxb{width: 80%;
+font-size: 0.3em;}
+
+
+
+
   </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -136,19 +156,19 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="wrapper1">
-    <div class="boxitem1"></div>
-  </div>
+  <div class="filler"> </div>
   <div class="line">
     <p>You can't buy love </p>
     <p> but you can buy handmade</p>
     <p>and that's kind of the same thing </p>
   </div>
   <div class="filler"> </div>
+
   <div class="wrapper">
     <div class="boxa"> </div>
     <div class="boxb">
       <article>
+        <h1>Our Clay Story</h1>
 
         <p> At Nama we are crazy about clay! We love what we do and would like to share and enthuse you with the same
           joy that we feel while creating these pieces. We believe that less is more and that tableware should elevate
@@ -170,7 +190,7 @@
   </div>
 
 
-
+  <footer> <p> Nama Studio Pottery All Rights Reserved 2020</p></footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

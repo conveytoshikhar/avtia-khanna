@@ -4,283 +4,206 @@
 <head>
   <meta charset="utf-8">
   <title>Shop </title>
-  <style>
-    body {
-      margin: 40px;
-      font-family: "Optima";
-      color: #787878;
+    <style>  
+ body {
+  margin: 40px;
+     font-family: "Optima";
+     color: #787878;
+}
+        
+        
+        .caption{  background-color: #436d67;
+            width:100%;
+            height: 75%;
+        color: white;
+        padding: 90px 0px;
+        font-size: 105px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        transition-property: background-color;
+transition-delay: 0s;
+transition-duration: 4s;}
+        
+        .caption:hover{background-color: #436d51;}
+        
+        .order{ background-color:#c9bfa3;
+        color: white;
+        height: 34px;
+        margin-top: 52px;
+        padding-top: 20px;
+        width: 100%;
+        font-size: 14px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+}
+        
+        
+        
+        
+          .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 0px;
     }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+      max-width: 23%;
+      padding: 20px 8px;
+        margin-left: 4px;
+      justify-content: center ;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    h5 {
+      color: grey;
+      text-align: center;
+      margin-left: 50px;
+        margin: 20px;
+        font-family: "Optima";
+        font-size: 13px;
+    }
+
 
     .box {
-      background-color: #484;
-      color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      font-size: 150%;
-      height: 820px;
-      width: 100px;
-      margin: 10px;
-    }
-
-
-
-    .box:nth-child(even) {
-      background-color: #ccc;
-      color: #000;
-      height: 820px;
-      margin-left: 30px;
-      margin-right: 50px;
-      margin: 60px;
-    }
-
-    .wrapper {
-      width: 1200px;
-      display: grid;
-      grid-gap: 210px;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: 100px 100px 100px;
-      grid-auto-flow: column;
-      padding: 30px 90px;
-
-    }
-
-    .boxa {
-      background-image: url("https://i.ibb.co/XsNBvHK/IMG-8893.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 10px 40px;
+      margin-top: 28px;
+      vertical-align: middle;
+      width: 100%;
+      height: 420px;
       transition-property: background-image;
       transition-delay: 0.75s;
-      transition-duration: 3s
+      transition-duration: 1.5s;
     }
 
-    .boxa:hover {
-      background-image: url("https://i.ibb.co/C6fcrRL/IMG-8901.jpg");
-    }
+    .boxa { background: url("https://i.ibb.co/XsNBvHK/IMG-8893.jpg") no-repeat center center / cover;}
 
-    .boxb {
-      background-image: url("https://i.ibb.co/2c764SP/IMG-8956.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 170px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .boxa:hover { background: url("https://i.ibb.co/C6fcrRL/IMG-8901.jpg") no-repeat center center / cover;}
+    
+    .boxb { background: url("https://i.ibb.co/2c764SP/IMG-8956.jpg") no-repeat center center / cover;}
 
-    .boxb:hover {
-      background-image: url("https://i.ibb.co/QXNqmfC/IMG-8935.jpg");
-    }
+    .boxb:hover{background: url("https://i.ibb.co/QXNqmfC/IMG-8935.jpg") no-repeat center center / cover;}
 
-    .boxc {
-      background-image: url("https://i.ibb.co/KsJxWgF/IMG-8820.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 330px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .boxc{ background: url("https://i.ibb.co/KsJxWgF/IMG-8820.jpg" )no-repeat center center / cover;}
 
-    .boxc:hover {
-      background-image: url("https://i.ibb.co/h8TMvzZ/IMG-8809.jpg");
-    }
+    .boxc:hover{background: url("https://i.ibb.co/h8TMvzZ/IMG-8809.jpg") no-repeat center center / cover;}
 
-    .boxd {
-      background-image: url("https://i.ibb.co/B4pnfkH/IMG-8995.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 10px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .boxd{ background: url("https://i.ibb.co/B4pnfkH/IMG-8995.jpg" )no-repeat center center / cover;}
 
-    .boxd:hover {
-      background-image: url("https://i.ibb.co/TWHJc6H/IMG-8998.jpg");
-    }
+    .boxd:hover{background: url("https://i.ibb.co/TWHJc6H/IMG-8998.jpg") no-repeat center center / cover;}
 
-    .boxe {
-      background-image: url("https://i.ibb.co/Vmxpd7q/IMG-8230.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 170px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .boxe{background: url("https://i.ibb.co/Vmxpd7q/IMG-8230.jpg" )no-repeat center center / cover;}
 
-    .boxe:hover {
-      background-image: url("https://i.ibb.co/X3rJxg0/IMG-8222.jpg");
-    }
+    .boxe:hover{background: url("https://i.ibb.co/X3rJxg0/IMG-8222.jpg") no-repeat center center / cover;}
 
-    .boxf {
-      background-image: url("https://i.ibb.co/qJC45YL/IMG-8502.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 330px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .boxf{background: url("https://i.ibb.co/qJC45YL/IMG-8502.jpg" )no-repeat center center / cover;}
 
-    .boxf:hover {
-      background-image: url("https://i.ibb.co/gM08XQT/IMG-8501.jpg");
-    }
+    .boxf:hover{background: url("https://i.ibb.co/gM08XQT/IMG-8501.jpg") no-repeat center center / cover;}
+
+    .boxg{background: url("https://i.ibb.co/8xWKRM2/IMG-8729.jpg")no-repeat center center / cover;}
+
+    .boxg:hover{background: url("https://i.ibb.co/d5tq8nk/IMG-8724.jpg") no-repeat center center / cover;}
+
+    .boxh{background: url("https://i.ibb.co/920Ksx4/IMG-8246.jpg" )no-repeat center center / cover;}
+
+    .boxh:hover{background: url("https://i.ibb.co/MCFx8RX/IMG-8241.jpg") no-repeat center center / cover;}
+
+    .boxi{background: url("https://i.ibb.co/xqt5bTm/IMG-8869.jpg" )no-repeat center center / cover;}
+
+    .boxi:hover{background: url("https://i.ibb.co/dmrmXqb/IMG-8860.jpg") no-repeat center center / cover;}
+
+    .boxj{background: url("https://i.ibb.co/WkMZrqv/IMG-8967.jpg" )no-repeat center center / cover;}
+
+    .boxj:hover{background: url("https://i.ibb.co/M9t5f24/IMG-8970.jpg") no-repeat center center / cover;}
+
+    .boxk{background: url("https://i.ibb.co/WWGJvF1/IMG-8279.jpg" )no-repeat center center / cover;}
+
+    .boxk:hover{background: url("https://i.ibb.co/9vkL5Qf/IMG-8270.jpg") no-repeat center center / cover;}
+
+    .boxl{background: url(" https://i.ibb.co/fkGc3gP/IMG-8745.jpg" )no-repeat center center / cover;}
+
+    .boxl:hover{background: url("https://i.ibb.co/2PVPDyH/IMG-8744.jpg") no-repeat center center / cover;}
+        
+     .boxm{background: url("https://i.ibb.co/GdGDRwb/IMG-8539.jpg")no-repeat center center / cover;}
+
+    .boxm:hover{background: url("https://i.ibb.co/Htp2ytb/IMG-8540.jpg") no-repeat center center / cover;}
+        
+    .boxn{background: url("https://i.ibb.co/d6d2K3Z/IMG-8602.jpg" )no-repeat center center / cover;}
+
+    .boxn:hover{background: url("https://i.ibb.co/Qp9nxyN/IMG-8600.jpg") no-repeat center center / cover;}
+        
+    .boxo{background: url("https://i.ibb.co/WVQ3CcN/IMG-8614.jpg")no-repeat center center / cover;}
+
+    .boxo:hover{background: url("https://i.ibb.co/t2KLKZM/IMG-8618.jpg") no-repeat center center / cover;}
+        
+    .boxp{background: url("https://i.ibb.co/1sY9MDb/IMG-8465.jpg" )no-repeat center center / cover;}
+
+    .boxp:hover{background: url("https://i.ibb.co/1QphBMJ/IMG-8468.jpg") no-repeat center center / cover;}
+        
+
+        
+        footer{ 
+        background-color:#436d67 ;
+            color: white;
+        padding: 8px;
+        margin: 100px 0px 0px 0px;
+        text-align: center;
+        width: 100%;
+        padding-right: 22px;}   
+        
+        
+
+    /* media queries */
 
 
-    .boxh {
-      background-image: url("https://i.ibb.co/8xWKRM2/IMG-8729.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 10px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
 
-    .boxh:hover {
-      background-image: url("https://i.ibb.co/d5tq8nk/IMG-8724.jpg");
-    }
+      .box {
+        height: 490px;
+       justify-content: center ; }
 
-    .boxi {
-      background-image: url("https://i.ibb.co/920Ksx4/IMG-8246.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 170px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+    .order{ 
+        padding-right: 0px; }
 
-    .boxi:hover {
-      background-image: url("https://i.ibb.co/MCFx8RX/IMG-8241.jpg");
-    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
 
-    .boxj {
-      background-image: url("https://i.ibb.co/xqt5bTm/IMG-8869.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 330px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
+      .box {
+        height: 420px;
+          width: 290px;
+        align-content: center ;
+        margin: 20px 50px;}
+        
+           .caption{  
+            width:100%;
+            height: 65%;
+        font-size: 70px;
+        padding-right: 30px;}
 
-    .boxj:hover {
-      background-image: url("https://i.ibb.co/dmrmXqb/IMG-8860.jpg");
-    }
-
-
-    .boxk {
-      background-image: url("https://i.ibb.co/WkMZrqv/IMG-8967.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 10px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
-
-    .boxk:hover {
-      background-image: url("https://i.ibb.co/M9t5f24/IMG-8970.jpg");
-    }
-
-    .boxl {
-      background-image: url("https://i.ibb.co/WWGJvF1/IMG-8279.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 170px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
-
-    .boxl:hover {
-      background-image: url("https://i.ibb.co/9vkL5Qf/IMG-8270.jpg");
-    }
-
-    .boxm {
-      background-image: url("https://i.ibb.co/fkGc3gP/IMG-8745.jpg");
-      background-position: center center;
-      background-size: cover;
-      width: 290px;
-      height: 400px;
-      margin: 330px 40px;
-      transition-property: background-image;
-      transition-delay: 0.75s;
-      transition-duration: 3s
-    }
-
-    .boxm:hover {
-      background-image: url("https://i.ibb.co/2PVPDyH/IMG-8744.jpg");
-    }
-
-
-    .caption {
-      background-color: #436d67;
-      color: white;
-      padding: 70px;
-      font-size: 100px;
-      justify-content: center;
-      align-content: center;
-      text-align: center;
-      transition-property: background-color;
-      transition-delay: 0s;
-      transition-duration: 4s;
-    }
-
-    .caption:hover {
-      background-color: #436d51;
-    }
-
-    .order {
-      background-color: #c9bfa3;
-      color: white;
-      padding: 8px;
-      font-size: 14px;
-      justify-content: center;
-      align-content: center;
-      text-align: center;
-
-    }
-
-    figcaption {
-      justify-content: center;
-      margin-left: 80px;
-      margin-top: 420px;
-    }
-
-    footer {
-      background-color: white;
-      padding: 400px;
-      color: white;
-    }
-   
-  </style>
-
+    </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -298,86 +221,107 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<article>
+        <article>
     <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./nama_home.html">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="./shop.html">
-              Terra
-            </a>
-          </li>
+        <nav>
+			<ul>
+                 <li>
+					<a href="./nama_home.html" >
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="./shop.html" >
+			       Shop
+					</a>
+				</li>
+                <li>
+					<a href="./our_clay_story.html" >
+						Our Clay Story 
+					</a>
+				</li>
+                <li>
+					<a href="./namacontact.html" >
+						Contact
+					</a>
+				</li>
+            </ul>    
+		</nav>
+            </div>
 
-          <li>
-            <a href="./our_clay_story.html">
-              Our Clay Story
-            </a>
-          </li>
-          <li>
-            <a href="./namacontact.html">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-</article>
+    </article>
 
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="order">All items available on Pre-order</div>
-  <div class="caption"> T E R R A</div>
-  <div class="wrapper">
-    <div class="boxa">
-      <figcaption>Woodfire Platter</figcaption>
+        <div class="order">All items available on Pre-order</div>
+    <div class="caption"> T E R R A</div>
+
+
+  <div class="row">
+    <div class="column">
+      <div class="boxa box"></div>
+     <h5> Woodfire Platter</h5>
+
+      <div class="box boxb"></div>
+      <h5>Blue Slate Mugs</h5>
+
+      <div class="box boxc"></div>
+      <h5>Moonshine Bowls</h5>
+      
+      <div class="box boxd"></div>
+       <h5>Ocean Spray Bowls</h5> 
+      </div> 
+    
+      <div class="column">
+       <div class="box boxe"></div>
+       <h5>Silver Oak Mugs </h5>
+
+       <div class="box boxf"></div>
+       <h5> Shibori Bowl</h5>
+    
+       <div class="box boxg"></div>
+       <h5> Autumn Leaves Bowls</h5>
+      
+       <div class="box boxh"></div>
+       <h5>Jade Blossom Mugs </h5>
+      </div>
+      
+      <div class="column">
+        <div class="box boxi"></div>
+        <h5>Yin and Yang Bowls </h5>
+  
+        <div class="box boxj"></div>
+        <h5>Mirage Platter </h5>
+
+        <div class="box boxk"></div>
+        <h5> Jade Textured Mugs</h5>
+   
+        <div class="box boxl"></div>
+      <h5>Blue Temboku Bowls </h5>
     </div>
-    <div class="boxb">
-      <figcaption>Blue Slate Mugs</figcaption>
+      
+         <div class="column">
+        <div class="box boxm"></div>
+        <h5>Acacia Platter </h5>
+  
+        <div class="box boxn"></div>
+        <h5> Akira Vase</h5>
+
+        <div class="box boxo"></div>
+        <h5>Aqua Indented Bowl</h5>
+   
+        <div class="box boxp"></div>
+      <h5> Leaf Imprinted Bottle</h5>
     </div>
-    <div class="boxc">
-      <figcaption>Moonshine Bowls</figcaption>
-    </div>
-    <div class="boxd">
-      <figcaption>Ocean Spray Bowls</figcaption>
-    </div>
-    <div class="boxe">
-      <figcaption>Silver Oak Mugs</figcaption>
-    </div>
-    <div class="boxf">
-      <figcaption> Shibori Bowl</figcaption>
-    </div>
-    <div class="boxh">
-      <figcaption> Autumn Leaves Bowls</figcaption>
-    </div>
-    <div class="boxi">
-      <figcaption> Jade Blossom Mugs</figcaption>
-    </div>
-    <div class="boxj">
-      <figcaption> Yin and Yang Bowls</figcaption>
-    </div>
-    <div class="boxk">
-      <figcaption> Mirage Platter</figcaption>
-    </div>
-    <div class="boxl">
-      <figcaption> Jade Textured Mugs</figcaption>
-    </div>
-    <div class="boxm">
-      <figcaption> Blue Temboku Bowls</figcaption>
-    </div>
+
   </div>
+    
+  
+ <footer> <p> Nama Studio Pottery All Rights Reserved 2020</p></footer>
+  
 
-
-  <footer> </footer>
-
-
-
+        
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

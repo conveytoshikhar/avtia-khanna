@@ -86,12 +86,52 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   nav { background: #e8e8e8;}
+
+   article nav ul {  
+    
+    text-decoration: none;
+    color:#595959;
+    display:inline-flex;
+    padding: 10px 20px 10px 20px;
+    margin: black 15px;
+    text-align: right;
+    list-style: none;
+    font-family: sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+nav a:hover {color:#c9bfa3;}
+
+nav ul li { list-style: none;
+     display: flex;
+      text-align: right;  
+      color:#595959; 
+}
+
+li a{ margin: 10px; 
+  text-decoration: none;
+  color:#595959;
+}
+
+@media only screen and (max-width: 480px) {
+  nav ul a {text-align: right;}}
+
+@media only screen and (max-width: 1080px) and (min-width: 480px)  {
+  
+  nav ul a {text-align: right;
+      margin-left:70px;}
+}
 
   
 
- 
+ /*
 
-nav { background: #e8e8e8;}
+
 article nav ul {  
     text-decoration: none;
     background-color: none;
@@ -142,11 +182,11 @@ display:flex;}
 }
 
 
+*/
 
 
 
-
-/* media queries */
+/* media queries 
  @media only screen and (max-width: 520px) {
        nav ul li { 
      font-size: 6px;   
@@ -161,7 +201,7 @@ display:flex;}
       nav ul li { 
      font-size: 12px;   
 }
-   
+   */
 
     /* nav{ width: 100%;}} */
 /* ==========================================================================
