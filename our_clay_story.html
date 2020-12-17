@@ -4,106 +4,199 @@
 <head>
   <meta charset="utf-8">
   <title>Our Clay Story </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
   <style>
-    
     .wrapper {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-gap: 10px;
       justify-content: center;
 
-    }     
-.boxa { background-image: url("https://i.ibb.co/1QB12yR/PHOTO-2020-08-30-17-07-33.jpg");
-      background-position: center center;
-    background-size: cover;
-    height: 820px;
- padding: 50px;
- margin: 50px;
- width: 75%;
-   
     }
-    
-.boxb {
-  
-  color: darkgrey;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 1.25em;
-    height: 720px;
-    justify-content: center;
-    align-content: center;
-    text-justify: auto;
-    padding: 80px;
-    font-family: "Optima";
-    width: 75%;
-}
-    p{ padding: 20px}
-h1{color: #436d67;}
+
+    .boxa {
+      background-image: url("https://i.ibb.co/1QB12yR/PHOTO-2020-08-30-17-07-33.jpg");
+      background-position: center center;
+      background-size: cover;
+      height: 820px;
+      padding: 50px;
+      margin: 50px;
+      width: 75%;
+
+    }
+
+    .boxb {
+
+      color: darkgrey;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 1.25em;
+      height: 720px;
+      justify-content: center;
+      align-content: center;
+      text-justify: auto;
+      padding: 80px;
+      font-family: "Optima";
+      width: 75%;
+    }
+
+
+    h1 {
+      color: #436d67;
+    }
 
     .line {
       font-family: cursive;
       background: #c9bfa3;
-      color: white;
-      font-size: 30px;
+      background: #436d67;
+      display: flex;
       justify-content: center;
-      align-content: center;
+      align-items: center;
       text-align: center;
-      height: 280px;
-      width:100%;
+      height: 300px;
+      width: 100%;
     }
 
-    .line,p {padding: 10px;}
+    footer {
+      background-color: #436d67;
+      color: white;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Optima";
+    }
 
-    .filler {
-      height: 50px;
-      background: #436d67;
-      margin-bottom: 40px;
-      width:100%; }
+    .header-heading {
+      font-size: 38px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Homemade Apple', cursive;
+    }
 
-    .wrapper1 {
-      margin: 0 0 20px 0;
-      width: 500px;
-      height: 400px;
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(4, 80px);
-      grid-template-rows: repeat(3, 100px);
-      justify-content: center ;
-      align-content: end; }
+    .header-heading span {
+      display: block;
+      padding: 4px;
+      margin-top: 10px;
+    }
 
-    footer{ 
-        background-color:#436d67 ;
-        color: white;
-        padding: 8px;
-        margin:50px 0px 0px 0px;
-        width: 100%;
+    .portrait {
+      height: 600px;
+      margin: 20px auto;
+      width: auto;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .content-child {
+      flex: 1 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-row {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: -30px;
+    }
+
+    .flex-row p {
+      color: rgba(0, 0, 0, 0.9);
+      max-width: 80%;
+      margin-top: 8px;
+    }
+
+    .flex-row h1 {
+      font-size: 42px;
+      text-align: start;
+    }
+
+
+    /* media queries */
+    /* ipad */
+
+    @media screen and (max-width: 1600px) {
+      .flex-row {
+        margin-left: 0px;
+      }
+
+      .flex-row p {
+        max-width: 95%;
+      }
+
+    }
+
+    @media screen and (max-width: 1300px) {
+      .content-child {
+        flex: 1 0 100%;
+      }
+
+      .flex-row h1 {
         text-align: center;
-        font-family: "Optima";} 
+      }
 
-/* media queries */
+      .flex-row p {
+        width: 90%;
+        text-align: justify;
+      }
 
+      .flex-row {
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+      }
 
-@media screen and (max-width: 480px) /* iphone*/ {
-  .wrapper {display: block;
-    width: 950px;
-    align-content: center;}
-    
-    
-  
-    
-    @media screen and  (max-width: 1024px) and (min-width: 480px) /* ipad*/{ 
+      .header-heading {
+        font-size: 25px;
+      }
+    }
 
-    .wrapper { display: block;
-    width: 950px; }
+    /* iphone*/
+    @media screen and (max-width: 650px) {
+      .flex-row h1 {
+        text-align: center;
+        font-size: 35px;
+      }
 
-.boxa{width: 50%;}
+      .flex-row p {
+        width: 100%;
+        font-size: 18px;
+        text-align: justify;
+      }
 
-.boxb{width: 80%;
-font-size: 0.3em;}
+      .flex-row {
+        margin-bottom: 30px;
+      }
+    }
 
+    /* iphone*/
+    @media screen and (max-width: 480px) {
+      .flex-row h1 {
+        text-align: center;
+        font-size: 28px;
+      }
 
+      .flex-row p {
+        width: 90%;
+        font-size: 16px;
+        text-align: justify;
+      }
 
+      .flex-row {
+        margin-bottom: 30px;
+      }
 
+      .portrait {
+        height: 300px;
+      }
+    }
   </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -122,75 +215,79 @@ font-size: 0.3em;}
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<article>
-  <div>
-    <nav>
-      <ul>
-        <li>
-          <a href="./nama_home.html">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="./shop.html">
-            Terra
-          </a>
-        </li>
-
-        <li>
-          <a href="./our_clay_story.html">
-            Our Clay Story
-          </a>
-        </li>
-        <li>
-          <a href="./namacontact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-</article>
 
 <body>
+  <article>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./nama_home.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./shop.html">
+              Terra
+            </a>
+          </li>
+
+          <li>
+            <a href="./our_clay_story.html">
+              Our Clay Story
+            </a>
+          </li>
+          <li>
+            <a href="./namacontact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </article>
 
   <!-- Add your site or application content here -->
-  <div class="filler"> </div>
+  <!-- <div class="filler"> </div> -->
   <div class="line">
-    <p>You can't buy love </p>
+    <h3 class="header-heading">
+      <span>You can't buy love</span>
+      <span>but you can buy handmade,</span>
+      <span>and that's kind of the same thing</span>
+    </h3>
+    <!-- <p>You can't buy love </p>
     <p> but you can buy handmade</p>
-    <p>and that's kind of the same thing </p>
-  </div>
-  <div class="filler"> </div>
-
-  <div class="wrapper">
-    <div class="boxa"> </div>
-    <div class="boxb">
-      <article>
-        <h1>Our Clay Story</h1>
-
-        <p> At Nama we are crazy about clay! We love what we do and would like to share and enthuse you with the same
-          joy that we feel while creating these pieces. We believe that less is more and that tableware should elevate
-          everything you serve in it.</p>  
-
-        <p> Our pottery is designed, thrown, glazed, fired, photographed, marketed, sold, and shipped solely by our
-          founder who strives to live, work, learn and thrive from her daily interactions.</p>
-
-        <p> Eco-consciousness and sustainability have always been at the heart of all our practices. We try to reduce
-          waste and reuse and recycle most of our materials. Currently trying to reuse even our fired clay to give
-          strength to the new clay, we love that our core materials are all natural and organic.</p>
-
-        <p>Nama is happy to say that we have almost managed to make our packaging plastic free but we still might
-          sometimes need to bubble wrap our pieces to ensure they reach you safely over long distances. We strive to
-          improve everyday. </p>
-
-      </article>
-    </div>
+    <p>and that's kind of the same thing </p> -->
   </div>
 
+  <div class="content">
+    <article class="content-child">
+      <img class="portrait" src="https://i.ibb.co/1QB12yR/PHOTO-2020-08-30-17-07-33.jpg" />
+    </article>
+    <article class="content-child flex-row">
+      <h1 style="width: 100%;">Our Clay Story</h1>
 
-  <footer> <p> Nama Studio Pottery All Rights Reserved 2020</p></footer>
+      <p>At Nama we are crazy about clay! We love what we do and would like to share and enthuse you with the same joy
+        that we feel while creating these pieces. We believe that less is more and that tableware should elevate
+        everything you serve in it.</p>
+
+      <p>Our pottery is designed, thrown, glazed, fired, photographed, marketed, sold, and shipped solely by our
+        founder who strives to live, work, learn and thrive from her daily interactions.</p>
+
+      <p> Eco-consciousness and sustainability have always been at the heart of all our practices. We try to reduce
+        waste and reuse and recycle most of our materials. Currently trying to reuse even our fired clay to give
+        strength to the new clay, we love that our core materials are all natural and organic.</p>
+
+      <p>Nama is happy to say that we have almost managed to make our packaging plastic free but we still might
+        sometimes need to bubble wrap our pieces to ensure they reach you safely over long distances. We strive to
+        improve everyday. </p>
+    </article>
+  </div>
+
+  <footer>
+    <p> Nama Studio Pottery All Rights Reserved 2020</p>
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
