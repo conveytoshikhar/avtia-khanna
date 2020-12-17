@@ -1,8 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
 <style>
-  
-
   .wrapper {
     /* margin: 0 0 20px 0; */
     width: 500px;
@@ -12,7 +10,7 @@
     /* grid-gap: 10px; */
     /* grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(3, 100px); */
-    justify-content: center ;
+    justify-content: center;
     align-content: end;
   }
 
@@ -47,75 +45,105 @@
   }
 
   .caption,
-  p {font-size: 18px; }
+  p {
+    font-size: 18px;
+  }
 
   .caption,
-  h1 {font-size: 30px;
-    font-family: "Optima";}
+  h1 {
+    font-size: 30px;
+    font-family: "Optima";
+  }
 
   .flex {
-  padding: 20px;
-  margin: 0px;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
 
-.item{height:  200px; width: 200px; 
- border-radius: 50%; padding: 15px; }
- 
-.flex-item1{ background: url("https://i.ibb.co/n8xvNGs/IMG-9004.jpg");
-}
-.flex-item2{ background: url("https://i.ibb.co/dr9scJh/IMG-8809.jpg" );
-}
-.flex-item3{ background: url("https://i.ibb.co/VgNCzsY/IMG-8546.jpg");
-}
-.flex-item4{background: url("https://i.ibb.co/nLG4vJr/IMG-8218.jpg");
-}
-.flex-item5{ background: url( "https://i.ibb.co/RNnh4pv/IMG-8487.jpg");
-}
+    display: -webkit-box display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .item {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 15px;
+  }
+
+  .flex-item1 {
+    background: url("https://i.ibb.co/n8xvNGs/IMG-9004.jpg") no-repeat center center / cover;
+  }
+
+  .flex-item2 {
+    background: url("https://i.ibb.co/dr9scJh/IMG-8809.jpg") no-repeat center center / cover;
+    ;
+  }
+
+  .flex-item3 {
+    background: url("https://i.ibb.co/VgNCzsY/IMG-8546.jpg") no-repeat center center / cover;
+  }
+
+  .flex-item4 {
+    background: url("https://i.ibb.co/nLG4vJr/IMG-8218.jpg") no-repeat center center / cover;
+    ;
+  }
+
+  .flex-item5 {
+    background: url("https://i.ibb.co/RNnh4pv/IMG-8487.jpg") no-repeat center center / cover;
+  }
 
 
 
-h6{  color: grey;
-      text-align: center;
-        margin-top: 200px;
-        padding:40px;
-        align-content: center;
-        font-family: "Optima";}
+  h6 {
+    color: grey;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 200px;
+    padding: 40px;
+    align-content: center;
+    font-family: "Optima";
+  }
 
 
-        footer{ 
-        background-color:#436d67 ;
-            color: white;
-        padding: 8px;
-        margin: 100px 0px 0px 0px;
-        text-align: center;
-        width: 100%;
-        padding-right: 22px;}   
-/
+  footer {
+    background-color: #436d67;
+    color: white;
+    padding: 8px;
+    margin: 100px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
+    padding-right: 22px;
+  }
+
 
 
   @media only screen and (max-width: 480px) and (min-width: 320px) {
-  .item{padding: 10px;
-    margin: 30px;
-    margin-top: 400px;}
-   }
-    
+    .item {
+      /* padding: 10px; */
+      margin: 22px;
+      /* margin-top: 400px; */
+    }
+
+    h6 {
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
 
   @media only screen and (max-width: 1080px) and (min-width: 480px) {
-    .item{padding: 10px;
-    margin: 30px;
-    margin-top: 50px;}
-  } 
-
+    .item {
+      padding: 10px;
+      margin: 30px;
+      margin-top: 50px;
+    }
+  }
 </style>
 
 <head>
@@ -176,7 +204,7 @@ h6{  color: grey;
 
 
   <!-- <div class="wrapper"> -->
-    <div class="boxitem1"></div>
+  <div class="boxitem1"></div>
   <!-- </div> -->
 
   <div class="caption">
@@ -188,14 +216,26 @@ h6{  color: grey;
   </div>
 
   <ul class="container flex">
-  <li class="item flex-item1"> <h6>Snack Plates</h6n></li>
-  <li class="item flex-item2"><h6>Pasta Bowls</h6></li>
-  <li class="item flex-item3"><h6>Platters</h6></li>
-  <li class="item flex-item4"><h6>Mugs</h6></li>
-  <li class="item flex-item5"><h6>Bowls</h6></li>
-</ul>
+    <li class="item flex-item1">
+      <h6>Snack Plates</h6n>
+    </li>
+    <li class="item flex-item2">
+      <h6>Pasta Bowls</h6>
+    </li>
+    <li class="item flex-item3">
+      <h6>Platters</h6>
+    </li>
+    <li class="item flex-item4">
+      <h6>Mugs</h6>
+    </li>
+    <li class="item flex-item5">
+      <h6>Bowls</h6>
+    </li>
+  </ul>
 
-<footer> <p> Nama Studio Pottery All Rights Reserved 2020</p></footer>
+  <footer>
+    <p> Nama Studio Pottery All Rights Reserved 2020</p>
+  </footer>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
