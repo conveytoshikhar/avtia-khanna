@@ -4,44 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>Shop </title>
-    <style>  
- body {
+  <style>
+    body {
+      font-family: "Optima";
+      color: #787878;
+    }
 
-     font-family: "Optima";
-     color: #787878;
-}
-        
-        
-        .caption{  background-color: #436d67;
-            width:100%;
-            height: 75%;
-        color: white;
-        padding: 90px 0px;
-        font-size: 105px;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        transition-property: background-color;
-transition-delay: 0s;
-transition-duration: 4s;}
-        
-        .caption:hover{background-color: #436d51;}
-        
-        .order{ background-color:#c9bfa3;
-        color: white;
-        height: 34px;
-        padding-top: 20px;
-        width: 100%;
-        font-size: 14px;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-}
-        
-        
-        
-        
-          .row {
+    .caption {
+      background-color: #436d67;
+      width: 100%;
+      height: 75%;
+      color: white;
+      padding: 90px 0px;
+      font-size: 105px;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      transition-property: background-color;
+      transition-delay: 0s;
+      transition-duration: 4s;
+    }
+
+    .caption:hover {
+      background-color: #436d51;
+    }
+
+    .order {
+      background-color: #c9bfa3;
+      color: white;
+      height: 34px;
+      padding-top: 20px;
+      width: 100%;
+      font-size: 14px;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+
+    .row {
       display: -ms-flexbox;
       /* IE10 */
       display: flex;
@@ -49,6 +49,8 @@ transition-duration: 4s;}
       /* IE10 */
       flex-wrap: wrap;
       padding: 0 0px;
+      align-items: center;
+      justify-content: center;
     }
 
     /* Create four equal columns that sits next to each other */
@@ -58,8 +60,8 @@ transition-duration: 4s;}
       flex: 25%;
       max-width: 23%;
       padding: 20px 8px;
-        margin-left: 4px;
-      justify-content: center ;
+      margin-left: 4px;
+      justify-content: center;
     }
 
     .column img {
@@ -72,9 +74,9 @@ transition-duration: 4s;}
       color: grey;
       text-align: center;
       margin-left: 50px;
-        margin: 20px;
-        font-family: "Optima";
-        font-size: 13px;
+      margin: 20px;
+      font-family: "Optima";
+      font-size: 13px;
     }
 
 
@@ -89,87 +91,152 @@ transition-duration: 4s;}
       transition-duration: 1.5s;
     }
 
-    .boxa { background: url("https://i.ibb.co/XsNBvHK/IMG-8893.jpg") no-repeat center center / cover;}
+    .boxa {
+      background: url("https://i.ibb.co/XsNBvHK/IMG-8893.jpg") no-repeat center center / cover;
+    }
 
-    .boxa:hover { background: url("https://i.ibb.co/C6fcrRL/IMG-8901.jpg") no-repeat center center / cover;}
-    
-    .boxb { background: url("https://i.ibb.co/2c764SP/IMG-8956.jpg") no-repeat center center / cover;}
+    .boxa:hover {
+      background: url("https://i.ibb.co/C6fcrRL/IMG-8901.jpg") no-repeat center center / cover;
+    }
 
-    .boxb:hover{background: url("https://i.ibb.co/QXNqmfC/IMG-8935.jpg") no-repeat center center / cover;}
+    .boxb {
+      background: url("https://i.ibb.co/2c764SP/IMG-8956.jpg") no-repeat center center / cover;
+    }
 
-    .boxc{ background: url("https://i.ibb.co/KsJxWgF/IMG-8820.jpg" )no-repeat center center / cover;}
+    .boxb:hover {
+      background: url("https://i.ibb.co/QXNqmfC/IMG-8935.jpg") no-repeat center center / cover;
+    }
 
-    .boxc:hover{background: url("https://i.ibb.co/h8TMvzZ/IMG-8809.jpg") no-repeat center center / cover;}
+    .boxc {
+      background: url("https://i.ibb.co/KsJxWgF/IMG-8820.jpg")no-repeat center center / cover;
+    }
 
-    .boxd{ background: url("https://i.ibb.co/B4pnfkH/IMG-8995.jpg" )no-repeat center center / cover;}
+    .boxc:hover {
+      background: url("https://i.ibb.co/h8TMvzZ/IMG-8809.jpg") no-repeat center center / cover;
+    }
 
-    .boxd:hover{background: url("https://i.ibb.co/TWHJc6H/IMG-8998.jpg") no-repeat center center / cover;}
+    .boxd {
+      background: url("https://i.ibb.co/B4pnfkH/IMG-8995.jpg")no-repeat center center / cover;
+    }
 
-    .boxe{background: url("https://i.ibb.co/Vmxpd7q/IMG-8230.jpg" )no-repeat center center / cover;}
+    .boxd:hover {
+      background: url("https://i.ibb.co/TWHJc6H/IMG-8998.jpg") no-repeat center center / cover;
+    }
 
-    .boxe:hover{background: url("https://i.ibb.co/X3rJxg0/IMG-8222.jpg") no-repeat center center / cover;}
+    .boxe {
+      background: url("https://i.ibb.co/Vmxpd7q/IMG-8230.jpg")no-repeat center center / cover;
+    }
 
-    .boxf{background: url("https://i.ibb.co/qJC45YL/IMG-8502.jpg" )no-repeat center center / cover;}
+    .boxe:hover {
+      background: url("https://i.ibb.co/X3rJxg0/IMG-8222.jpg") no-repeat center center / cover;
+    }
 
-    .boxf:hover{background: url("https://i.ibb.co/gM08XQT/IMG-8501.jpg") no-repeat center center / cover;}
+    .boxf {
+      background: url("https://i.ibb.co/qJC45YL/IMG-8502.jpg")no-repeat center center / cover;
+    }
 
-    .boxg{background: url("https://i.ibb.co/8xWKRM2/IMG-8729.jpg")no-repeat center center / cover;}
+    .boxf:hover {
+      background: url("https://i.ibb.co/gM08XQT/IMG-8501.jpg") no-repeat center center / cover;
+    }
 
-    .boxg:hover{background: url("https://i.ibb.co/d5tq8nk/IMG-8724.jpg") no-repeat center center / cover;}
+    .boxg {
+      background: url("https://i.ibb.co/8xWKRM2/IMG-8729.jpg")no-repeat center center / cover;
+    }
 
-    .boxh{background: url("https://i.ibb.co/920Ksx4/IMG-8246.jpg" )no-repeat center center / cover;}
+    .boxg:hover {
+      background: url("https://i.ibb.co/d5tq8nk/IMG-8724.jpg") no-repeat center center / cover;
+    }
 
-    .boxh:hover{background: url("https://i.ibb.co/MCFx8RX/IMG-8241.jpg") no-repeat center center / cover;}
+    .boxh {
+      background: url("https://i.ibb.co/920Ksx4/IMG-8246.jpg")no-repeat center center / cover;
+    }
 
-    .boxi{background: url("https://i.ibb.co/xqt5bTm/IMG-8869.jpg" )no-repeat center center / cover;}
+    .boxh:hover {
+      background: url("https://i.ibb.co/MCFx8RX/IMG-8241.jpg") no-repeat center center / cover;
+    }
 
-    .boxi:hover{background: url("https://i.ibb.co/dmrmXqb/IMG-8860.jpg") no-repeat center center / cover;}
+    .boxi {
+      background: url("https://i.ibb.co/xqt5bTm/IMG-8869.jpg")no-repeat center center / cover;
+    }
 
-    .boxj{background: url("https://i.ibb.co/WkMZrqv/IMG-8967.jpg" )no-repeat center center / cover;}
+    .boxi:hover {
+      background: url("https://i.ibb.co/dmrmXqb/IMG-8860.jpg") no-repeat center center / cover;
+    }
 
-    .boxj:hover{background: url("https://i.ibb.co/M9t5f24/IMG-8970.jpg") no-repeat center center / cover;}
+    .boxj {
+      background: url("https://i.ibb.co/WkMZrqv/IMG-8967.jpg")no-repeat center center / cover;
+    }
 
-    .boxk{background: url("https://i.ibb.co/WWGJvF1/IMG-8279.jpg" )no-repeat center center / cover;}
+    .boxj:hover {
+      background: url("https://i.ibb.co/M9t5f24/IMG-8970.jpg") no-repeat center center / cover;
+    }
 
-    .boxk:hover{background: url("https://i.ibb.co/9vkL5Qf/IMG-8270.jpg") no-repeat center center / cover;}
+    .boxk {
+      background: url("https://i.ibb.co/WWGJvF1/IMG-8279.jpg")no-repeat center center / cover;
+    }
 
-    .boxl{background: url(" https://i.ibb.co/fkGc3gP/IMG-8745.jpg" )no-repeat center center / cover;}
+    .boxk:hover {
+      background: url("https://i.ibb.co/9vkL5Qf/IMG-8270.jpg") no-repeat center center / cover;
+    }
 
-    .boxl:hover{background: url("https://i.ibb.co/2PVPDyH/IMG-8744.jpg") no-repeat center center / cover;}
-        
-     .boxm{background: url("https://i.ibb.co/GdGDRwb/IMG-8539.jpg")no-repeat center center / cover;}
+    .boxl {
+      background: url(" https://i.ibb.co/fkGc3gP/IMG-8745.jpg")no-repeat center center / cover;
+    }
 
-    .boxm:hover{background: url("https://i.ibb.co/Htp2ytb/IMG-8540.jpg") no-repeat center center / cover;}
-        
-    .boxn{background: url("https://i.ibb.co/d6d2K3Z/IMG-8602.jpg" )no-repeat center center / cover;}
+    .boxl:hover {
+      background: url("https://i.ibb.co/2PVPDyH/IMG-8744.jpg") no-repeat center center / cover;
+    }
 
-    .boxn:hover{background: url("https://i.ibb.co/Qp9nxyN/IMG-8600.jpg") no-repeat center center / cover;}
-        
-    .boxo{background: url("https://i.ibb.co/WVQ3CcN/IMG-8614.jpg")no-repeat center center / cover;}
+    .boxm {
+      background: url("https://i.ibb.co/GdGDRwb/IMG-8539.jpg")no-repeat center center / cover;
+    }
 
-    .boxo:hover{background: url("https://i.ibb.co/t2KLKZM/IMG-8618.jpg") no-repeat center center / cover;}
-        
-    .boxp{background: url("https://i.ibb.co/1sY9MDb/IMG-8465.jpg" )no-repeat center center / cover;}
+    .boxm:hover {
+      background: url("https://i.ibb.co/Htp2ytb/IMG-8540.jpg") no-repeat center center / cover;
+    }
 
-    .boxp:hover{background: url("https://i.ibb.co/1QphBMJ/IMG-8468.jpg") no-repeat center center / cover;}
-        
+    .boxn {
+      background: url("https://i.ibb.co/d6d2K3Z/IMG-8602.jpg")no-repeat center center / cover;
+    }
 
-        
-        footer{ 
-        background-color:#436d67 ;
-            color: white;
-        padding: 8px;
-        margin: 100px 0px 0px 0px;
-        text-align: center;
-        width: 100%;
-        padding-right: 22px;}   
-        
-        
+    .boxn:hover {
+      background: url("https://i.ibb.co/Qp9nxyN/IMG-8600.jpg") no-repeat center center / cover;
+    }
+
+    .boxo {
+      background: url("https://i.ibb.co/WVQ3CcN/IMG-8614.jpg")no-repeat center center / cover;
+    }
+
+    .boxo:hover {
+      background: url("https://i.ibb.co/t2KLKZM/IMG-8618.jpg") no-repeat center center / cover;
+    }
+
+    .boxp {
+      background: url("https://i.ibb.co/1sY9MDb/IMG-8465.jpg")no-repeat center center / cover;
+    }
+
+    .boxp:hover {
+      background: url("https://i.ibb.co/1QphBMJ/IMG-8468.jpg") no-repeat center center / cover;
+    }
+
+
+
+    footer {
+      background-color: #436d67;
+      color: white;
+      padding: 8px;
+      margin: 100px 0px 0px 0px;
+      text-align: center;
+      width: 100%;
+      padding-right: 22px;
+    }
+
+
 
     /* media queries */
 
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1200px) {
       .column {
         -ms-flex: 50%;
         flex: 50%;
@@ -178,9 +245,15 @@ transition-duration: 4s;}
 
       .box {
         height: 490px;
-       justify-content: center ; }
+        width: auto;
+        margin: 20px auto;
+        justify-content: center;
+      }
 
-       .order{width: 100%;}
+      .order {
+        width: 100%;
+      }
+    }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
@@ -192,19 +265,23 @@ transition-duration: 4s;}
 
       .box {
         height: 420px;
-          width: 290px;
-        align-content: center ;
-        margin: 20px 50px;}
-        
-           .caption{  
-            width:100%;
-            height: 65%;
+        width: 290px;
+        align-content: center;
+        margin: 20px 50px;
+      }
+
+      .caption {
+        width: 100%;
+        height: 65%;
         font-size: 70px;
-        padding-right: 30px;}
+        padding-right: 30px;
+      }
 
-        .order{width: 100%;}
-
-    </style>
+      .order {
+        width: 100%;
+      }
+    }
+  </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -222,107 +299,109 @@ transition-duration: 4s;}
 
   <meta name="theme-color" content="#fafafa">
 </head>
-        <article>
-    <div>
-        <nav>
-			<ul>
-                 <li>
-					<a href="./nama_home.html" >
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="./shop.html" >
-			       Shop
-					</a>
-				</li>
-                <li>
-					<a href="./our_clay_story.html" >
-						Our Clay Story 
-					</a>
-				</li>
-                <li>
-					<a href="./namacontact.html" >
-						Contact
-					</a>
-				</li>
-            </ul>    
-		</nav>
-            </div>
+<article>
+  <div>
+    <nav>
+      <ul>
+        <li>
+          <a href="./nama_home.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="./shop.html">
+            Shop
+          </a>
+        </li>
+        <li>
+          <a href="./our_clay_story.html">
+            Our Clay Story
+          </a>
+        </li>
+        <li>
+          <a href="./namacontact.html">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-    </article>
+</article>
 
 <body>
 
   <!-- Add your site or application content here -->
-        <div class="order">All items available on Pre-order</div>
-    <div class="caption"> T E R R A</div>
+  <div class="order">All items available on Pre-order</div>
+  <div class="caption"> T E R R A</div>
 
 
   <div class="row">
     <div class="column">
       <div class="boxa box"></div>
-     <h5> Woodfire Platter</h5>
+      <h5> Woodfire Platter</h5>
 
       <div class="box boxb"></div>
       <h5>Blue Slate Mugs</h5>
 
       <div class="box boxc"></div>
       <h5>Moonshine Bowls</h5>
-      
+
       <div class="box boxd"></div>
-       <h5>Ocean Spray Bowls</h5> 
-      </div> 
-    
-      <div class="column">
-       <div class="box boxe"></div>
-       <h5>Silver Oak Mugs </h5>
+      <h5>Ocean Spray Bowls</h5>
+    </div>
 
-       <div class="box boxf"></div>
-       <h5> Shibori Bowl</h5>
-    
-       <div class="box boxg"></div>
-       <h5> Autumn Leaves Bowls</h5>
-      
-       <div class="box boxh"></div>
-       <h5>Jade Blossom Mugs </h5>
-      </div>
-      
-      <div class="column">
-        <div class="box boxi"></div>
-        <h5>Yin and Yang Bowls </h5>
-  
-        <div class="box boxj"></div>
-        <h5>Mirage Platter </h5>
+    <div class="column">
+      <div class="box boxe"></div>
+      <h5>Silver Oak Mugs </h5>
 
-        <div class="box boxk"></div>
-        <h5> Jade Textured Mugs</h5>
-   
-        <div class="box boxl"></div>
+      <div class="box boxf"></div>
+      <h5> Shibori Bowl</h5>
+
+      <div class="box boxg"></div>
+      <h5> Autumn Leaves Bowls</h5>
+
+      <div class="box boxh"></div>
+      <h5>Jade Blossom Mugs </h5>
+    </div>
+
+    <div class="column">
+      <div class="box boxi"></div>
+      <h5>Yin and Yang Bowls </h5>
+
+      <div class="box boxj"></div>
+      <h5>Mirage Platter </h5>
+
+      <div class="box boxk"></div>
+      <h5> Jade Textured Mugs</h5>
+
+      <div class="box boxl"></div>
       <h5>Blue Temboku Bowls </h5>
     </div>
-      
-         <div class="column">
-        <div class="box boxm"></div>
-        <h5>Acacia Platter </h5>
-  
-        <div class="box boxn"></div>
-        <h5> Akira Vase</h5>
 
-        <div class="box boxo"></div>
-        <h5>Aqua Indented Bowl</h5>
-   
-        <div class="box boxp"></div>
+    <div class="column">
+      <div class="box boxm"></div>
+      <h5>Acacia Platter </h5>
+
+      <div class="box boxn"></div>
+      <h5> Akira Vase</h5>
+
+      <div class="box boxo"></div>
+      <h5>Aqua Indented Bowl</h5>
+
+      <div class="box boxp"></div>
       <h5> Leaf Imprinted Bottle</h5>
     </div>
 
   </div>
-    
-  
- <footer> <p> Nama Studio Pottery All Rights Reserved 2020</p></footer>
-  
 
-        
+
+  <footer>
+    <p> Nama Studio Pottery All Rights Reserved 2020</p>
+  </footer>
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
