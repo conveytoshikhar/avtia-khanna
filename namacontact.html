@@ -4,168 +4,222 @@
 <head>
   <meta charset="utf-8">
   <title>Our Clay Story </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
   <style>
-    .wrapper {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-gap: 10px;
-      justify-content: center; }
-
-    .contact {
-      color: #436d67;
-      font-size: 65px;
-      font-weight: normal;
-      padding-left: 430px;
-      margin-bottom: -100px;
-      text-align: center;
+    .subheader {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
 
-    .contact1 h3 {
+    .mainHeading {
+      color: #436d67;
+      font-size: 85px;
+      font-weight: bolder;
+      text-align: center;
+      width: 100%;
+      margin: 0px;
+    }
+
+    .subheading1 {
       border-top: 6px double #a7b5bc;
-      margin-left: 300px;
-      margin-right: 300px;
       color: #5e5e5e;
+      margin: 0px;
       text-align: center;
       font-family: "optima";
-      font-size: 30px;
-      justify-content: center;
-        align-content: center;
-        text-align: center;
+      padding-top: 10px;
+      font-size: 35px;
     }
 
-    .contact2 h5 {
+    .subheading2 {
       color: #807e7e;
       text-align: center;
       font-family: "optima";
-      font-size: 18px;
+      font-size: 24px;
+    }
+
+
+
+    .banner {
+      height: 600px;
       margin-top: 40px;
-      margin-bottom: 150px;
+      width: 100%;
+      display: flex;
+      align-items: center;
       justify-content: center;
-        align-content: center;
-    }
-
-
-    .contactitem1 {
-      background-image: url("https://static.dezeen.com/uploads/2018/08/ceramic-collection-by-sam-baron-and-yatzer-for-mateus-product-homeware-design_dezeen_hero-2-852x480.jpg");
-      background-repeat: no-repeat;
+      background: url("https://static.dezeen.com/uploads/2018/08/ceramic-collection-by-sam-baron-and-yatzer-for-mateus-product-homeware-design_dezeen_hero-2-852x480.jpg") no-repeat center center;
       background-size: cover;
-      background-position: center;
-      justify-content: center;
-      width: 100vh;
-      height: 600px;
-      padding-top: 0px;
-      margin-top: -80px;
     }
 
-    .overlay {
-      height: 600px;
-      width: 700px;
-      margin-left: 40px;
-      margin-top: -80px;
-      background-color: black;
-      opacity: 0.42;
-    }
 
-    .site_title,
-    p {
+
+
+    .banner p {
       color: white;
       font-family: "Optima";
-      font-size: 30px;
-      margin: 35px;
-      margin-top: 100px;
-      justify-content: center;
-        align-content: center;
-        text-align: center;
+      font-size: 38px;
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      border-radius: 12px;
     }
 
 
-    
-    .contactform
-{
-  padding: 75px 50px;
-  background:white;
-  box-shadow: 0 15px 70px rgba(0,0,0,0.1);
-  max-width: 715px;
-  margin-top: 0px;
-  font-family: "Optima";
-}
-.contactform h3
-{
-  color: #111;
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-.contactform .inputbox
-{
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
-}
-.contactform .inputbox input,
-.contactform .inputbox textarea
-{
-  width: 100%;
-  border: 1.3px solid darkgrey;
-  padding: 10px;
-  color: #111;
-  outline: none;
-  font-size: 16px;
-  resize: none;
-  font-weight: 300;
-}
-.contactform .inputbox input[type="submit"]
-{
-  font-size: 1em;
-  color: #fff;
-  background: #436d67;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none; 
-  letter-spacing: 2px;
-  transition: 0.5s;
-  max-width: 100px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;}
+    .contactform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      box-shadow: 0 15px 70px rgba(0, 0, 0, 0.1);
+      font-family: "Optima";
+    }
+
+    .contactform form {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contactform h3 {
+      color: #111;
+      width: 100%;
+
+      font-size: 1.2em;
+      text-align: start;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .contactform .inputbox {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .contactform .inputbox input,
+    .contactform .inputbox textarea {
+      width: 100%;
+      border: 1.3px solid darkgrey;
+      padding: 10px;
+      color: #111;
+      outline: none;
+      font-size: 16px;
+      resize: none;
+      font-weight: 300;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+      font-size: 1em;
+      color: #fff;
+      background: #436d67;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
 
 
-  .contactform .inputboxsend input[type="submit"]
-{padding:10px 30px;
-  font-size: 1em;
-  color: #fff;
-  background: #436d67;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none; 
-  letter-spacing: 2px;
-  transition: 0.75s;
-  max-width: 100px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;}
+    .contactform .inputboxsend input[type="submit"] {
+      padding: 10px 30px;
+      font-size: 1em;
+      width: 100%;
+      color: #fff;
+      background: #436d67;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      transition: 0.75s;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
 
 
-.contactform .inputboxsend input:hover{background-color:darkgrey;
-color: whitesmoke;
-  letter-spacing: 4px;}
-  
-  
+    .contactform .inputboxsend input:hover {
+      background-color: darkgrey;
+      color: whitesmoke;
+      letter-spacing: 4px;
+    }
 
+    @media screen and (max-width: 1200px) {
+      .mainHeading {
+        font-size: 55px;
+      }
 
-  @media only screen and (max-width: 480px) and (min-width: 80px) {
+      .subheading1 {
+        font-size: 28px;
+      }
 
-  }
+      .subheading2 {
+        font-size: 18px;
+      }
 
+      .banner p {
+        font-size: 30px;
+        width: 70%;
+      }
 
-  @media only screen and (max-width: 1024px) and (min-width: 480px) {
-   
-    .contact {
-      padding-left: 130px;}
-      background-color: red;
+      .banner {
+        height: 450px;
+      }
 
-  } 
+      .contactform {
+        padding: 50px 30px;
+      }
+    }
 
+    @media screen and (max-width: 780px) {
+      .mainHeading {
+        font-size: 40px;
+      }
+
+      .subheading1 {
+        font-size: 25px;
+      }
+
+      .subheading2 {
+        font-size: 18px;
+      }
+
+      .banner p {
+        font-size: 28px;
+        width: 100%;
+      }
+
+      .banner {
+        height: 400px;
+      }
+
+      .contactform {
+        padding: 12px;
+      }
+
+      .contactform form {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .banner p {
+        font-size: 20px;
+        width: 100%;
+      }
+
+      .contactform form {
+        width: 100%;
+      }
+
+    }
   </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -184,89 +238,72 @@ color: whitesmoke;
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<article>
-  <div>
-    <nav>
-      <ul>
-        <li>
-          <a href="./nama_home.html">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="./shop.html">
-            Terra
-          </a>
-        </li>
 
-        <li>
-          <a href="./our_clay_story.html">
-            Our Clay Story
-          </a>
-        </li>
-        <li>
-          <a href="./namacontact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<body style="max-width: 100vw;">
+  <article>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./nama_home.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./shop.html">
+              Terra
+            </a>
+          </li>
 
-</article>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  <div class="wrapper1">
-    <div class="boxitem1"></div>
-  </div>
-
-  <div class="contact">
-    <h1> Say Hello </h1>
-  </div>
-  <div class="contact1">
-    <h3> Don't be a stranger! Hit us up.</h3>
-  </div>
-  <div class="contact2">
-    <h5> namastudiopottery@gmail.com</h5>
-  </div>
-
-  <div class="wrapper">
-
-    <div class="contactitem1"></div>
-    <div class="overlay">
-
-
-
-      <div class="site_title">
-        <p>We love uniqueness! If you wish to customize anything as per your requirements, we would love to help. Reach
-          out to discuss your ideas and specifications. We would love to hear from you</p>
-      </div>
+          <li>
+            <a href="./our_clay_story.html">
+              Our Clay Story
+            </a>
+          </li>
+          <li>
+            <a href="./namacontact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
+
+  </article>
+
+  <div class="subheader">
+    <h1 class="mainHeading"> Say Hello</h1>
+    <h2 class="subheading1">Don't be a stranger! Hit us up.</h2>
+    <h2 class="subheading2">namastudiopottery@gmail.com</h2>
   </div>
 
+  <div class="banner">
+    <p>
+      We love uniqueness! If you wish to customize anything as per your requirements, we would love to help. Reach
+      out to discuss your ideas and specifications. We would love to hear from you
+    </p>
+  </div>
 
   <div class="contactform">
     <form method="post" action="mailto:namastudiopottery.com">
-    <h3>Send Message</h3>
-    <div class="inputbox">
-      <input type="text" name="" placeholder="Name">
-    </div>
-    <div class="inputbox">
-      <input type="text" name="" placeholder="Email">
-    </div>
-    <div class="inputbox">
-      <textarea placeholder="Message"></textarea>
-    </div>
-    <div class="inputboxsend">
-      <input type="submit" value="Send">
-    </div>
-  </form>
+      <h3>Send Us A Message</h3>
+      <div class="inputbox">
+        <input type="text" name="" placeholder="Name">
+      </div>
+      <div class="inputbox">
+        <input type="text" name="" placeholder="Email">
+      </div>
+      <div class="inputbox">
+        <textarea placeholder="Message"></textarea>
+      </div>
+      <div class="inputboxsend">
+        <input type="submit" value="Send">
+      </div>
+    </form>
   </div>
 
 
-  
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
